@@ -194,7 +194,7 @@ def signfile(exe, sigfile, output):
     cert = open(sigfile, 'rb').read()
 
     if not output: 
-        output = output = str(exe) + "_signed"
+        output = str(exe) + "_signed"
 
     shutil.copy2(exe, output)
     
